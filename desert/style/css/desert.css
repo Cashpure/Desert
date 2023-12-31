@@ -483,3 +483,13 @@ h1 {
    text-transform: uppercase;
    text-align: center;
 }
+
+.copyright {
+   position: absolute;
+   right: 15px;
+   bottom: 38px;
+   color: #B8B8B8;
+   font-family: Poppins;
+   font-size: 14px;
+   font-weight: 400;
+}
