@@ -427,6 +427,7 @@ h1 {
 .footer {
    padding: 31px 0 24px;
    background-color: #885134;
+   position: relative;
 }
 .footer-inner {
    display: flex;
