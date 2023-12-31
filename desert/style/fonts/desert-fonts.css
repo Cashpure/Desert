@@ -1,0 +1,64 @@
+@font-face {
+   font-family: Inter;
+   src: local("Inter-Light"), local("Inter-Light"),
+   url(../fonts/Inter-Light.woff2) format(woff2),
+   url(../fonts/Inter-Light.woff) format(woff),
+   url(../fonts/Inter-Light.eot) format(eot);
+   font-weight: 300;
+}
+@font-face {
+   font-family: Inter;
+   src: local("Inter-Medium"), local("Inter-Medium"),
+   url(../fonts/Inter-Medium.woff2) format(woff2),
+   url(../fonts/Inter-Medium.woff) format(woff),
+   url(../fonts/Inter-Medium.eot) format(eot);
+   font-weight: 400;
+}
+@font-face {
+   font-family: Inter;
+   src: local("Inter-Regular"), local("Inter-Regular"),
+   url(../fonts/Inter-Regular.woff2) format(woff2),
+   url(../fonts/Inter-Regular.woff) format(woff),
+   url(../fonts/Inter-Regular.eot) format(eot);
+   font-weight: 500;
+}
+@font-face {
+   font-family: Inter;
+   src: local("Inter-SemiBold"), local("Inter-SemiBold"),
+   url(../fonts/Inter-SemiBold.woff2) format(woff2),
+   url(../fonts/Inter-SemiBold.woff) format(woff),
+   url(../fonts/Inter-SemiBold.eot) format(eot);
+   font-weight: 600;
+}
+@font-face {
+   font-family: Poppins;
+   src: local("Poppins-Light"), local("Poppins-Light"),
+   url(../fonts/Poppins-Light.woff2) format(woff2),
+   url(../fonts/Poppins-Light.woff) format(woff),
+   url(../fonts/Poppins-Light.eot) format(eot);
+   font-weight: 400;
+}
+@font-face {
+   font-family: Poppins;
+   src: local("Poppins-Medium"), local("Poppins-Medium"),
+   url(../fonts/Poppins-Medium.woff2) format(woff2),
+   url(../fonts/Poppins-Medium.woff) format(woff),
+   url(../fonts/Poppins-Medium.eot) format(eot);
+   font-weight: 500;
+}
+@font-face {
+   font-family: Poppins;
+   src: local("Poppins-SemiBold"), local("Poppins-SemiBold"),
+   url(../fonts/Poppins-SemiBold.woff2) format(woff2),
+   url(../fonts/Poppins-SemiBold.woff) format(woff),
+   url(../fonts/Poppins-SemiBold.eot) format(eot);
+   font-weight: 600;
+}
+@font-face {
+   font-family: Poppins;
+   src: local("Poppins-Bold"), local("Poppins-Bold"),
+   url(../fonts/Poppins-Bold.woff2) format(woff2),
+   url(../fonts/Poppins-Bold.woff) format(woff),
+   url(../fonts/Poppins-Bold.eot) format(eot);
+   font-weight: 700;
+}
