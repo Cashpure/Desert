@@ -140,6 +140,14 @@ $(function () {
          $('.blog__item-text-3').removeClass('blog__text-active');
       };
    });
+      $("a[href*='#']").on("click", function (e) {
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      e.preventDefault();
+      return false;
+   });
 
    // setInterval(() => {
    //    if ($('.blog__item').hasClass('blog__item-active')) {
