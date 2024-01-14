@@ -679,7 +679,7 @@ h1 {
       right: 0;
       min-width: 320px;
       background-color: #885134;
-      min-height: 100vh;
+      min-height: 100%;
       z-index: 150;
       transform: translateX(100%);
       transition: all .3s;
