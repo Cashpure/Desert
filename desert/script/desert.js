@@ -1,5 +1,12 @@
 $(function () {
 
+   $('.burger').on('click', function (e) {
+      e.preventDefault()
+      $(this).toggleClass('burger--active')
+      $('.header-top__nav').toggleClass('header-top__nav--active')
+      $('.overlay').fadeToggle()
+   })
+
    $('.tours__item-1').hover(function () {
       $('.tours__item-title-1').toggleClass('tours__item-title-active');
       $('.tours__item-text-1').toggleClass('tours__item-text-active');
@@ -26,18 +33,6 @@ $(function () {
       draggable: true,
       variableWidth: true,
       centerMode: true,
-      // centerPadding: '302px',
-      // appendArrows: $('.testimonials__slider-arrows'),
-      // responsive: 
-      //    [
-      //       {
-      //          breakpoint: 1238,
-      //          settings: {
-      //             slidesToShow: 1,
-      //             dots: true
-      //          }
-      //       }
-      //    ]
    });
 
 
@@ -142,13 +137,6 @@ $(function () {
    });
 
 
-   // setInterval(() => {
-   //    if ($('.blog__item').hasClass('blog__item-active')) {
-
-   //    } else {
-   //       $('.blog__content').fadeOut()
-   //    }
-   // }, 0);
 
 
 });
