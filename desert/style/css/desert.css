@@ -578,28 +578,33 @@ h1 {
    .follow__pictures {
       display: grid;
       grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      justify-content: center;
    }
 
    .follow__pictures-item {
       max-width: 200px;
       margin: 0 auto;
    }
+
    .blog__main {
       padding-bottom: 575px;
       display: block;
    }
+
    .blog__list {
       display: grid;
       grid-template: 1fr 1fr / 1fr 1fr;
       margin-right: 0;
 
    }
+
    .blog__content {
       padding-top: 35px;
       right: 0;
       left: 0;
       margin: auto;
    }
+
    .blog__item {
       border-bottom: none;
    }
@@ -679,7 +684,7 @@ h1 {
       right: 0;
       min-width: 320px;
       background-color: #885134;
-      min-height: 100%;
+      min-height: 100vh;
       z-index: 150;
       transform: translateX(100%);
       transition: all .3s;
@@ -860,26 +865,33 @@ h1 {
    .about__stat-text {
       font-size: 14px;
    }
+
    .tours__item-title {
       display: block;
       font-size: 16px;
    }
+
    .tours__item-title p {
       display: block;
    }
+
    .tours__item-title p:nth-child(2n) {
       padding-top: 10px;
    }
+
    .tours__item-text {
       margin-top: 40px;
       display: block;
    }
+
    .tours__item-info {
       padding: 12px 12px;
    }
+
    .tours__item:hover {
       width: auto;
    }
+
    .sahara {
       padding-left: 99px;
    }
@@ -887,6 +899,8 @@ h1 {
    .follow__pictures {
       display: grid;
       grid-template: 1fr 1fr 1fr / 1fr 1fr;
+      max-width: 400px;
+      margin: 0 auto;
    }
 
    .blog__content img {
@@ -921,17 +935,73 @@ h1 {
    .sahara {
       padding-left: 86px;
    }
+
    .blog__content-title {
       font-size: 20px;
       padding-bottom: 10px;
    }
+
    .blog__content-text {
       font-size: 15px;
    }
+
    .blog__item-inner {
       padding: 25px 20px 25px 25px;
    }
+
    .blog__item-text {
       font-size: 17px;
+   }
+
+
+   .follow__pictures-item img {
+      width: 47vw;
+   }
+}
+
+@media (max-width: 380px) {
+   .header__bg {
+      display: none;
+   }
+
+   .header__title {
+      margin: 250px auto 0 auto;
+      position: inherit;
+      width: 295px;
+   }
+
+   h1 {
+      margin: 0 auto;
+   }
+
+   .sahara {
+      padding-left: 0;
+   }
+
+   .s {
+      color: white;
+   }
+
+   .des {
+      color: white;
+   }
+
+
+   .history__info {
+      right: -45px;
+   }
+   .about__content {
+      right: -45px;
+   }
+
+   .carousel__slide {
+      width: 230px;
+      height: 350px;
+   }
+
+
+   .copyright {
+      position: unset;
+      padding: 15px 0 0 15px;
    }
 }
