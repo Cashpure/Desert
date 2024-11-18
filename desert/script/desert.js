@@ -1,11 +1,38 @@
 $(function () {
 
-   $('.burger').on('click', function (e) {
+  $('.burger').on('click', function (e) {
       e.preventDefault()
       $(this).toggleClass('burger--active')
       $('.header-top__nav').toggleClass('header-top__nav--active')
       $('.overlay').fadeToggle()
    })
+   $('.overlay').on('click', function () {
+      $('.overlay').fadeToggle()
+      $('.burger').toggleClass('burger--active')
+      $('.header-top__nav').toggleClass('header-top__nav--active')
+   })
+
+   $(".header-top__nav-link").on("click", function (e) {
+      e.preventDefault();
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      if (window.width <= 750) {
+         $('.header-top__nav').toggleClass('header-top__nav--active')
+         $('.overlay').fadeToggle('fast')
+         $('.burger').toggleClass('burger--active')
+      }
+      return false;
+   });
+   $(".footer__nav-link").on("click", function (e) {
+      e.preventDefault();
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top
+      }, 777);
+      return false;
+   });
 
    $('.tours__item-1').hover(function () {
       $('.tours__item-title-1').toggleClass('tours__item-title-active');
