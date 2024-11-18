@@ -1,6 +1,6 @@
 body {
    color: #885134;
-   max-width: 1920px;
+   /* max-width: 1920px; */
    margin: 0 auto;
 }
 
@@ -17,7 +17,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-   display: none;
+   width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background: transparent;
+   z-index: -1;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #b17b4d;
 }
 
 * {
@@ -42,6 +51,7 @@ body {
 .header {
    min-height: 700px;
    background: url(../../pics/emma-van-sant-GkIGSLW04Nc-unsplash.jpg) no-repeat;
+   background-size: cover;
    background-position: center;
    position: relative;
 }
@@ -73,6 +83,10 @@ body {
    padding-right: 41px;
    font-size: 18px;
    line-height: 27px;
+}
+
+.header-top__nav-link:hover {
+   border-bottom: 3px solid #885134;
 }
 
 .header-top__nav-item:hover {}
@@ -178,8 +192,9 @@ h1 {
 }
 
 .tours__content {
-   background: url(../../pics/tatiana-zanon-VP2mjtJqWvY-unsplash.jpg);
-   background-position: 0 -250px;
+   background: url(../../pics/tatiana-zanon-VP2mjtJqWvY-unsplash.jpg) no-repeat;
+   background-position: center;
+   background-size: cover;
    position: relative;
 }
 
@@ -412,6 +427,7 @@ h1 {
 
 .blog__item {
    /* background: #885134; */
+   cursor: pointer;
    max-width: 500px;
    border-bottom: 1px solid #B8B8B8;
    /* margin-bottom: 20px; */
@@ -514,6 +530,10 @@ h1 {
    padding-right: 51px;
 }
 
+.footer__nav-link:hover {
+   border-bottom: 3px solid white;
+}
+
 .footer__nav {
    display: flex;
    align-items: center;
@@ -544,6 +564,10 @@ h1 {
 .follow__pictures {
    display: flex;
    padding-top: 50px;
+}
+
+.follow__pictures-item img {
+   width: 100%;
 }
 
 .follow__title {
@@ -582,7 +606,8 @@ h1 {
    }
 
    .follow__pictures-item {
-      max-width: 200px;
+      width: 100%;
+      /* max-width: 200px; */
       margin: 0 auto;
    }
 
