@@ -18,7 +18,7 @@ $(function () {
       $('html, body').stop().animate({
          scrollTop: $(anchor.attr('href')).offset().top
       }, 777);
-      if (window.width <= 750) {
+      if ($(window).width() <= 750) {
          $('.header-top__nav').toggleClass('header-top__nav--active')
          $('.overlay').fadeToggle('fast')
          $('.burger').toggleClass('burger--active')
